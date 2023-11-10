@@ -1,8 +1,8 @@
 
-let numeriCasuali=[];
 let container=document.getElementById("container");
-container.innerHTML=funzione;
+let numeriCasuali=[];
 
+setTimeout(genNumb(numeriCasuali),5*1000)
 
 function genNumb(arrey){
     for (let i = 0; i < 5; i++) {
@@ -10,14 +10,20 @@ function genNumb(arrey){
         numero=(Math.floor(Math.random() * 100));
         arrey.push(numero);
         
+        
     }
-    return  arrey;
+    console.log(arrey);
 }
 
-function hidden(elementoNascosto) {
-    elementoNascosto.classList.add("hidden");
+/*  scrivo i numeri generati */ 
+/*  container.innerHTML=(genNumb(numeriCasuali))
+ */
+
+/* setTimeout(myfunction,4000);
+
+ function myfunction(){
+    console.log(`cioa mamma`)
 }
+ */
 
 
-const funzione= genNumb(numeriCasuali);
-setTimeout(hidden(container),  3000);
