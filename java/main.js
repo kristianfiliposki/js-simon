@@ -1,6 +1,7 @@
 
 let container=document.getElementById("container");
 let numeriCasuali=[];
+let dati=44;
 
 setTimeout(genNumb(numeriCasuali),5*1000)
 
@@ -27,3 +28,10 @@ function genNumb(arrey){
  */
 
 
+
+/* creon una funzione di numeri */
+function reading(numeri){
+    console.log(numeri)
+}
+/* tali dati appaiono dopo 3s */
+setTimeout(reading(dati),3000);
