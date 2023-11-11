@@ -19,7 +19,7 @@ function genNumb(arrey,elemento){
 }
 
 genNumb(numeriCasuali,container);
-
+console.log(numeriCasuali)
 setTimeout(function (){
     container.classList.add("hidden");  
 },1000*2)
@@ -35,6 +35,7 @@ setTimeout(function (){
     for (let i = 0; i < numeriInseriti.length; i++) {
         let numero = numeriInseriti[i];
             if(numeriCasuali.includes(numero)){
+                console.log()
                 console.log("è corretto")
             }
             else if(!(numeriCasuali.includes(numero))){
